@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fa">
 <head>
     <meta charset="UTF-8">
@@ -7,40 +7,54 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+
+<header>
     <h1>حسن شکیباپور</h1>
+
+    <p id="online-users">
+        👥 کاربران آنلاین: <span id="online-count">0</span>
+    </p>
 
     <p>
         <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Gmail">
-        ایمیل: <a href="mailto:Hassanshakiba83@gmail.com">Hassanshakiba83@gmail.com</a>
+        ایمیل:
+        <a href="mailto:Hassanshakiba83@gmail.com">
+            Hassanshakiba83@gmail.com
+        </a>
     </p>
 
     <p>
         <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
-        گیت‌هاب: <a href="https://github.com/9has9/Hasan-Shakibapour-resume" target="_blank">github.com/9has9/Hasan-Shakibapour-resume</a>
+        گیت‌هاب:
+        <a href="https://github.com/9has9/Hasan-Shakibapour-resume" target="_blank">
+            github.com/9has9/Hasan-Shakibapour-resume
+        </a>
     </p>
 </header>
 
+<section>
+    <h2>خلاصه</h2>
+    <p>
+        دانشجوی کارشناسی مهندسی کامپیوتر در دانشگاه شهید چمران اهواز.
+        علاقه‌مند به برنامه‌نویسی و توسعه نرم‌افزار، با تمرکز بر یادگیری
+        زبان‌های برنامه‌نویسی و ساخت پروژه‌های کاربردی.
+    </p>
+</section>
 
-    <section>
-        <h2>خلاصه</h2>
-        <p>دانشجوی کارشناسی مهندسی کامپیوتر در دانشگاه شهید چمران اهواز. علاقه‌مند به برنامه‌نویسی و توسعه نرم‌افزار، با تمرکز بر یادگیری زبان‌های برنامه‌نویسی و ساخت پروژه‌های کاربردی.</p>
-    </section>
+<section>
+    <h2>تحصیلات</h2>
+    <article>
+        <h3>کارشناسی مهندسی کامپیوتر</h3>
+        <p>دانشگاه شهید چمران اهواز — ورودی ۱۴۰۱</p>
+    </article>
+</section>
 
-    <section>
-        <h2>تحصیلات</h2>
-        <article>
-            <h3>کارشناسی مهندسی کامپیوتر</h3>
-            <p>دانشگاه شهید چمران اهواز — ورودی ۱۴۰۱</p>
-        </article>
-    </section>
+<section>
+    <h2>پروژه‌ها</h2>
+    <p>در حال حاضر پروژه خاصی ثبت نشده است.</p>
+</section>
 
-    <section>
-        <h2>پروژه‌ها</h2>
-        <p>در حال حاضر پروژه خاصی ثبت نشده است.</p>
-    </section>
-
-    <section>
+<section>
     <h2>مهارت‌ها</h2>
     <ul>
         <li>
@@ -58,9 +72,25 @@
     </ul>
 </section>
 
+<section>
+    <h2>درخواست انجام پروژه</h2>
 
-    <footer>
-        <p>© 2025 حسن شکیباپور</p>
-    </footer>
+    <form id="project-form">
+        <input type="text" id="name" placeholder="نام و نام خانوادگی" required>
+        <input type="email" id="email" placeholder="ایمیل" required>
+        <input type="text" id="title" placeholder="عنوان پروژه" required>
+        <textarea id="description" placeholder="توضیح کوتاه پروژه" rows="4"></textarea>
+
+        <button type="submit">ارسال درخواست</button>
+    </form>
+
+    <p id="form-result"></p>
+</section>
+
+<footer>
+    <p>© 2025 حسن شکیباپور</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
