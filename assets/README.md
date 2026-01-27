@@ -29,9 +29,7 @@ uvicorn main:app --reload
 
 بعد از اجرا:
 
-API در آدرس زیر فعال است:
-
-http://127.0.0.1:8000
+API در آدرس زیر فعال است:http://127.0.0.1:8000
 
 مستندات Swagger:
 
@@ -58,6 +56,7 @@ http://localhost:5500/admin/login.html
 
 اطلاعات ورود ادمین
 Username: admin
+
 Password: admin123
 
 
@@ -100,14 +99,21 @@ Password: admin123
 🛠️ تکنولوژی‌های استفاده‌شده
 
 FastAPI
+
 SQLAlchemy
+
 JWT Authentication
+
 WebSocket
+
 HTML / CSS / JavaScript
+
 GitHub Pages
 
  دانشجو
 
 نام: حسن شکیباپور
+
 شماره دانشجویی:۴۰۱۷۳۱۰۱
+
 درس: مهندسی اینترنت
