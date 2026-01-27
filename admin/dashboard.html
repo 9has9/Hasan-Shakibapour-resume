@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <style>
+        * { box-sizing:border-box; font-family:"Segoe UI", Tahoma, sans-serif; }
+        body { margin:0; min-height:100vh; background:linear-gradient(135deg,#667eea,#764ba2); padding:30px; }
+        .container {
+            max-width:1100px; margin:auto; background:#fff; border-radius:14px;
+            padding:25px; box-shadow:0 15px 35px rgba(0,0,0,0.2); animation:fadeIn 0.8s ease;
+        }
+        @keyframes fadeIn { from{opacity:0; transform:translateY(15px);} to{opacity:1; transform:translateY(0);} }
+        .header { display:flex; justify-content:space-between; align-items:center; margin-bottom:25px; }
+        .header h2 { margin:0; color:#333; }
+        .online { background:#edf2ff; padding:8px 14px; border-radius:20px; color:#4c51bf; font-weight:bold; }
+        button.logout { background:#e63946; color:#fff; border:none; padding:8px 14px; border-radius:8px; cursor:pointer; }
+        table { width:100%; border-collapse:collapse; }
+        th,td { padding:12px; text-align:center; border-bottom:1px solid #eee; }
+        th { background:#f4f6ff; color:#444; }
+        select, .delete-btn { padding:6px; border-radius:6px; border:1px solid #ccc; }
+        .delete-btn { background:#e63946; color:white; cursor:pointer; border:none; }
+        .delete-btn:hover { opacity:0.85; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h2>📋 Admin Dashboard</h2>
+        <div>
+            <span class="online">🟢 Online: <span id="onlineCount">0</span></span>
+            <button class="logout" onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>Delete</th>
+        </tr>
+        </thead>
+        <tbody id="requestsTable"></tbody>
+    </table>
+</div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>
